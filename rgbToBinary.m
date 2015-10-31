@@ -5,6 +5,6 @@ function [binary] = rgbToBinary(imageRGB, lower, upper)
             (imageRGB(:, :, i) < lower(i));
     end
     binary = rgb(:, :, 1) | rgb(:, :, 2) | rgb(:, :, 3);
-    binary = ~binary;
+%     binary = ~binary;
     
    
